@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsApp Business Profesional | Sistema Comercial para PyMEs</title>
+    <title>JUBAL Tech Solutions | Sistemas · Tecnología · Negocios</title>
+    <!-- Favicon con el logo -->
+    <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 6C17.641 6 6 17.641 6 32C6 37.8193 7.84395 43.2245 11.0056 47.6583L8.61837 56.5434L17.8417 54.156C22.0545 57.2273 26.9581 59 32 59C46.359 59 58 47.359 58 33C58 18.641 46.359 6 32 6Z" fill="%2325d366"/><rect x="21" y="25" width="22" height="3" rx="1.5" fill="white"/><rect x="21" y="31" width="17" height="3" rx="1.5" fill="white"/><rect x="21" y="37" width="12" height="3" rx="1.5" fill="white"/></svg>'>
     <style>
         :root {
             --bg-color: #0f172a;
@@ -34,6 +36,15 @@
         header {
             text-align: center;
             margin-bottom: 50px;
+        }
+        .logo-container {
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+        }
+        .logo-svg {
+            width: 64px;
+            height: 64px;
         }
         .badge {
             display: inline-block;
@@ -114,6 +125,85 @@
             color: var(--accent);
             font-weight: bold;
         }
+        
+        /* Sistema de Mockup Embebido Minimalista y Pro */
+        .integrated-mockup {
+            background: linear-gradient(145deg, #090d16 0%, #162032 100%);
+            border: 2px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            margin: 30px 0;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            text-align: left;
+        }
+        .mockup-header-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 15px;
+        }
+        .mockup-profile {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .mockup-avatar {
+            width: 45px;
+            height: 45px;
+            background: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .mockup-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        .mockup-status {
+            font-size: 0.75rem;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .mockup-status::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .feature-card-mini {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 10px;
+            text-align: center;
+        }
+        .feature-card-mini .icon {
+            font-size: 1.2rem;
+            margin-bottom: 6px;
+        }
+        .feature-card-mini .label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        
         .price-box {
             text-align: center;
             background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
@@ -138,6 +228,7 @@
         @media(max-width: 480px) {
             h1 { font-size: 1.8rem; }
             .container { padding: 20px 10px; }
+            .features-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -146,9 +237,54 @@
     <div class="container">
         
         <header>
-            <div class="badge">Sistema Comercial para Negocios</div>
+            <div class="logo-container">
+                <svg class="logo-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 6C17.641 6 6 17.641 6 32C6 37.8193 7.84395 43.2245 11.0056 47.6583L8.61837 56.5434L17.8417 54.156C22.0545 57.2273 26.9581 59 32 59C46.359 59 58 47.359 58 33C58 18.641 46.359 6 32 6Z" fill="#25d366"/>
+                    <rect x="21" y="25" width="22" height="3" rx="1.5" fill="white"/>
+                    <rect x="21" y="31" width="17" height="3" rx="1.5" fill="white"/>
+                    <rect x="21" y="37" width="12" height="3" rx="1.5" fill="white"/>
+                </svg>
+            </div>
+            
+            <!-- Identidad de Marca Actualizada -->
+            <div class="badge">JUBAL Tech Solutions · Sistemas · Tecnología · Negocios</div>
+            
             <h1>¿Tu WhatsApp recibe consultas, <span>pero no está preparado para vender?</span></h1>
-            <p class="subtitle">No te enseñamos a usar WhatsApp. Te lo dejamos configurado, ordenado y pensado para convertir consultas en clientes.</p>
+            <p class="subtitle">No te enseñamos a usar herramientas. Te dejamos el canal configurado, ordenado y pensado para convertir consultas en clientes.</p>
+            
+            <!-- Mockup integrado -->
+            <div class="integrated-mockup">
+                <div class="mockup-header-flex">
+                    <div class="mockup-profile">
+                        <div class="mockup-avatar">🏢</div>
+                        <div>
+                            <div class="mockup-title">WhatsApp Business Pro</div>
+                            <div class="mockup-status">Infraestructura Comercial Activa</div>
+                        </div>
+                    </div>
+                    <span style="font-size: 0.75rem; background: rgba(37,211,102,0.15); color: var(--accent); padding: 4px 8px; border-radius: 4px; font-weight: 700;">NIVEL 2</span>
+                </div>
+                
+                <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">
+                    📁 Catálogo estructurado • ⚡ Respuestas rápidas • 🏷️ Segmentación de prospectos
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card-mini">
+                        <div class="icon">🚀</div>
+                        <div class="label">Más Ventas</div>
+                    </div>
+                    <div class="feature-card-mini">
+                        <div class="icon">⏱️</div>
+                        <div class="label">Ahorro de Tiempo</div>
+                    </div>
+                    <div class="feature-card-mini">
+                        <div class="icon">🔒</div>
+                        <div class="label">Mayor Confianza</div>
+                    </div>
+                </div>
+            </div>
+
             <a href="https://wa.me/5493814441149?text=Hola,%20quiero%20configurar%20el%20WhatsApp%20de%20mi%20negocio." class="cta-button">QUIERO MI WHATSAPP PROFESIONAL</a>
         </header>
 
@@ -188,7 +324,7 @@
         </section>
 
         <footer>
-            <p>PYMEs · Emprendedores · Profesionales</p>
+            <p>JUBAL Tech Solutions · Sistemas · Tecnología · Negocios</p>
         </footer>
 
     </div>
